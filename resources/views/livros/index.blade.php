@@ -1,3 +1,6 @@
+<ul>
 @foreach($livros as $livro)
-{{$livro->titulo}}
+<li>{{$livro->titulo}}</li>
 @endforeach
+</ul>
+{{$livros->render()}}
