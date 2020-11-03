@@ -9,5 +9,5 @@ class Genero extends Model
 {
     use HasFactory;
          protected $primaryKey="idg";
-    protected $table="designacao";
+    protected $table="generos";
 }
