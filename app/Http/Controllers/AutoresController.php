@@ -12,4 +12,15 @@ class AutoresController extends Controller
 
 	return view ('autores.index', ['autores'=>$autor]);
 }
+public function show (Request $request){
+	$idAutor=$request->id;
+
+	//$livro = Livro::findOrFail($idLivro);
+
+	//$livro= livro::find($idLivro);
+
+	$autor=Autor::where('ida',$idAutor)->first();
+	
+	return view ('autores.show',['autor'=>$autor]);
+}
 }
